@@ -8,4 +8,9 @@ Using the [OpenWeather API](https://openweathermap.org/api) to retrieve weather 
 
 The recently seached cities will be shown in a left bar, to quick search
 
+You can access to this app using the following link:
+
+https://marlysco.github.io/Weather-Dashboard/
+
+
 ![image](https://user-images.githubusercontent.com/44534982/115093848-9fc52c80-9ee9-11eb-8299-a4b1c4ba50de.png)
