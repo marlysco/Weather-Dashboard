@@ -1,0 +1,50 @@
+#header {
+    margin-left: 30%;
+    margin-top: -30px;
+    font-size: 50px;
+    font-weight: bolder;  
+}
+
+#left-bar {
+    border: gainsboro solid 2px ;
+    font-weight: bolder;
+    height: 150vh;
+    text-align: center;   
+}
+
+
+#city {
+    margin-top: 15px;
+    font-size: 25px;
+    text-align: center;
+}
+
+
+.rigth-bar {
+    border: solid black 2px;
+    margin-bottom: 10px;
+}
+
+.container {
+    display:inline-flex;
+}
+
+
+li {
+    width: 95%;
+    height: 40px;
+    text-align: center;
+    margin-left: -15px;
+    margin-bottom: 5px;;
+    border: solid gray 1px;
+
+}
+
+li:hover {
+    background-color:lightcyan;  
+}
+
+#recent-cities {
+    list-style-type: none;
+    margin-top: 20px;
+}
