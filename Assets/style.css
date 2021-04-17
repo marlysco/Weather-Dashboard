@@ -1,8 +1,10 @@
+
 #header {
     margin-left: 30%;
     margin-top: -30px;
     font-size: 50px;
     font-weight: bolder;  
+    height: 3vh;
 }
 
 #left-bar {
@@ -10,6 +12,11 @@
     font-weight: bolder;
     height: 150vh;
     text-align: center;   
+}
+
+#weather-info {
+    border: solid gainsboro 2px;
+    
 }
 
 
@@ -21,7 +28,7 @@
 
 
 .rigth-bar {
-    border: solid black 2px;
+   
     margin-bottom: 10px;
 }
 
@@ -34,9 +41,10 @@ li {
     width: 95%;
     height: 40px;
     text-align: center;
+    align-content: center;
     margin-left: -15px;
     margin-bottom: 5px;;
-    border: solid gray 1px;
+    border:solid gray 1px;
 
 }
 

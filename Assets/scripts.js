@@ -2,6 +2,7 @@ var weatherApiLink;
 var API_KEY="62cebcf9638adc42b53ad6cc0d111fe5"
 var userCity;
 var recenCities=[]
+var day1;
 
 
 //Listening the search button 
@@ -13,7 +14,7 @@ $("#search-form").on("submit", function(event){
     else {
     var userCity=$("#cityInput").val();
     console.log(userCity);
-    var weatherApiLink="http://api.openweathermap.org/data/2.5/weather?q="+userCity+"&appid="+API_KEY;
+    var weatherApiLink="http://api.openweathermap.org/data/2.5/weather?q="+userCity+"&units=imperial"+"&appid="+API_KEY;
     console.log(weatherApiLink);
 //Fectching the API link with the value of the city
     fetch(weatherApiLink)
@@ -24,7 +25,7 @@ $("#search-form").on("submit", function(event){
     console.log(data);
 //Getting the parameters to show the info
     $("#city-name").text(userCity)
-    $("#temperature").text("Temperature [K]: " + data.main.temp)
+    $("#temperature").text("Temperature [F]: " + data.main.temp)
     $("#humidity").text("Humidity " + data.main.humidity)
     $("#uv").text("UV Index: " + data.main.uvi)
     $("#wind").text("Wind Speed:: " + data.wind.speed)       
@@ -44,22 +45,6 @@ $("#search-form").on("submit", function(event){
     addCity.text(userCity)
     addCity.appendTo("#recent-cities")   
     //Adding the 5 days forecast
-
-
-    var fiveApiLink="http://api.openweathermap.org/data/2.5/weather?q="+userCity+"&exclude=daily"+"&appid="+API_KEY;
-    console.log(fiveApiLink);
-//Fectching the API link with the value of the city
-    fetch(fiveApiLink)
-    .then(function (response) {
-    console.log(response);
-    response.json().then(function (data) {
-    console.log(data);
-    });
-    var fiveDays=$("<h1>")
-    fiveDays.text("5 days forecast")
-    fiveDays.appendTo("#5-days")
-    //First days
-})
     }
 })
 
