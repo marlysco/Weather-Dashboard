@@ -10,7 +10,7 @@ The recently searched cities will be shown in a left bar, to quick search
 
 You can access to this app using the following link:
 
-https://marlysco.github.io/Weather-Dashboard/
+http://marlysco.github.io/Weather-Dashboard/
 
 
 
