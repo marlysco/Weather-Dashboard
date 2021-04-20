@@ -24,6 +24,7 @@ $("#search-form").on("submit", function(event){
     response.json().then(function (data) {
     console.log(data);
 //Getting the parameters to show the info
+    $("#weather").addClass("weather-info ")
     $("#city-name").text(userCity)
     $("#temperature").text("Temperature [F]: " + data.main.temp)
     $("#humidity").text("Humidity " + data.main.humidity)

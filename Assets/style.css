@@ -14,7 +14,7 @@
     text-align: center;   
 }
 
-#weather-info {
+.weather-info {
     border: solid gainsboro 2px;
     
 }
